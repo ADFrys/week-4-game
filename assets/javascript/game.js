@@ -15,10 +15,6 @@ $(document).ready(function() {
   crystal2 = Math.floor(Math.random() * 12 + 1);
   crystal3 = Math.floor(Math.random() * 12 + 1);
   crystal4 = Math.floor(Math.random() * 12 + 1);
-  console.log(crystal1);
-  console.log(crystal2);
-  console.log(crystal3);
-  console.log(crystal4);
   
   //display random number between 19 and 120 for target score
   var randomNumberScore = Math.floor(Math.random() * ((120-19)+1) + 19);
@@ -38,10 +34,7 @@ random number to each crystal. Resets total score to 0 and display on screen */
   }
 
   function keepScore(crystal) {
-
-    console.log("score_before: " + score)
     score += crystal;
-    console.log("score_after: " + score)
     $("p.score").text(score);
 
 //If the total score = the random number, add 1 to wins (appear on screen) and alert user of win
@@ -75,5 +68,3 @@ random number to each crystal. Resets total score to 0 and display on screen */
     });
     
   });
-
-
