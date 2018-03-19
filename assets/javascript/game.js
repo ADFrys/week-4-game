@@ -54,6 +54,7 @@ random number to each crystal. Resets total score to 0 and display on screen */
     }
   }
 // When a crystal is clicked, add the crystal's value to the total score (have it appear on screen)
+
     $("#crystal1").on("click", function() {
     keepScore(crystal1);
     });
